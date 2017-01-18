@@ -1,6 +1,6 @@
 //3.- Declare 5 different variables, it can be either a number or a String
 var myName='monica';
-var age = 27;
+var age = 30;
 var career;
 var yearExp = 'i have 4 years of experience';
 var hob;
