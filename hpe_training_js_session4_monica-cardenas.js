@@ -1,75 +1,52 @@
-/*
-Exercises for lesson 4:
-1. Create a simple function that prints out this line: "My name is: <yourName> and guess what?
-I'm indeed learning js" and call it sending your name as a parameter.
-2. Create a simple While loop that prints true until the condition becomes false.
+//1.
+var name = "Monica";
+var nameString = function (name) {
+	console.log("Hi, I am " + name + "and guess what? I am indeed Learning js");
+	};
+nameString (name);
 
-4. Combine a While and For, the For loop is gonna be isnide the While loop. Tip: take care of the infinite loops ;)
-5. Ask a user for a number between 1-100 and create an If, elsif, else statement where you can print something different
-depending on his/her choice. make sure you are making all this inside a function and the parameter that is gonna be sent, is the
-user's answer. Tip: prompt is gonna help you out with this.
-*/
-var nombre= 'Monica';
-var array =["Sólo", "una cosa", "convierte", "en","imposible", "un" ,"sueño:","el miedo", "a fracasar.", "Paulo Cohelo"];
-var array2 = ["Aprenderás Lecciones."," Estás inscrito en una escuela informal"," de tiempo completo llamada vida."];
-
-name(nombre);
-verdadero();
-arreglo1();
-arreglo2();
-number(myAnswer);
-
-
-//1. Create a simple function that prints out this line: "My name is: <yourName> and guess what?
-function name(nombre) {
-  console.log("My name is " + nombre + " and guess what? I am indeed Learning js");
-}//fin de la funcion name
-
-
-
-//2. Create a simple While loop that prints true until the condition becomes false.
-function verdadero(){
-while(i<=6){
+//2.
+var verdadero = function(){
   var i=0;
-  i+=2;
-  if (i==6) {
-    console.log("True");
+  while(i<=6){
+    i+=2;
+    if (i==6) {
+      console.log("True");
     }//fin del if
   }//fin del while
-}//fin de la funcion verdadero
+};//fin de la funcion verdadero
 
+verdadero();
 
+//3.
+var arreglo1 = ["Sólo", "una cosa", "convierte", "en","imposible", "un" ,"sueño:","el miedo", "a fracasar.", "Paulo Cohelo"];
 
-
-//3. Create a While loop that prints all the statements inside an array of at least 10 words/sentences.
-function arreglo1{
+var varArreglo = function(){
   var a=0;
-  while(array[a]){
-  console.log(array[a]);
-  a++;
+
+  while(arreglo1[a]){
+    console.log(arreglo1[a]);
+    a++;
   }//fin del while
-}//fin de la funcion
+};//fin de la funcion
 
+varArreglo();
 
-
-//4. Combine a While and For, the For loop is gonna be inside the While loop. Tip: take care of the infinite loops ;)
-
-function arreglo2{
-var j=0;
-while (array2){
-  for(j=0; j<=1; j++){
+//4.
+var array2 = ["Aprenderás Lecciones."," Estás inscrito en una escuela informal"," de tiempo completo llamada vida."];
+var myarray =function(){
+var interruptor = true;
+while (interruptor){
+  for(var j=0; j<1; j++){
     console.log(array2);
       }//fin del For
+  interruptor = false;
     }//fin del while (true)
-  }//fin de la funcion
+  };//fin de la funcion
+myarray();
 
-
-
-/*5. Ask a user for a number between 1-100 and create an If, elsif, else statement where you can print something different
-depending on his/her choice. make sure you are making all this inside a function and the parameter that is gonna be sent, is the
-user's answer*/
-
-function number(myAnswer){
+//5.
+var myQuestion =function(myAnswer){
 var myAnswer = prompt("Give me a number between 1-100");
 
 if(myAnswer==0){
@@ -108,4 +85,6 @@ if(myAnswer==0){
     else{
       console.log("Tu numero es el 100");
     }
-}
+};
+
+myQuestion();
